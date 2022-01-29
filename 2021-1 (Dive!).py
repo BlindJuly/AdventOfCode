@@ -8,9 +8,10 @@ print(moves)
 count_v = 0
 count_h = 0
 for move in moves:
-    if len(move) == 7:
+    check_char = move[0]
+    if check_char == 'd':
         count_v += int(move[5])
-    elif len(move) == 10:
+    elif check_char == 'f':
         count_h += int(move[8])
     else:
         count_v -= int(move[3])
